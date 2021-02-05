@@ -2,16 +2,16 @@ import { useState, useEffect } from "react"
 import { Button } from "@material-ui/core"
 import InstagramEmbed from "react-instagram-embed"
 
-import SignInModal from "./SignInModal"
-import SignUpModal from "./SignUpModal"
-import ImageUpload from "./ImageUpload"
-import Post from "./Post"
+import SignInModal from "./components/Modals/SignInModal"
+import SignUpModal from "./components/Modals/SignUpModal"
+import ImageUpload from "./components/ImageUpload"
+import Post from "./components/Post"
 
 import userContext from "./context/UserContext"
 
 import { db, auth } from "./firebase"
 
-import "./App.css"
+import "./App.scss"
 
 function App() {
   const [posts, setPosts] = useState([])

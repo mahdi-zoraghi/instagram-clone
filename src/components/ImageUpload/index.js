@@ -2,9 +2,9 @@ import { useState } from "react"
 import { Button, TextField } from "@material-ui/core"
 import firebase from "firebase/app"
 
-import { storage, db } from "./firebase"
+import { storage, db } from "../../firebase"
 
-import "./ImageUpload.css"
+import "./ImageUpload.scss"
 
 function ImageUpload({ username }) {
   const [image, setImage] = useState(null)
